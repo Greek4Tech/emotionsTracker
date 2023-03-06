@@ -2,22 +2,21 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const contacts = ["Olivia", "Ethan", "Sophia", "William", "Isabella", "Benjamin", "Mia", "Alexander", "Charlotte", "James"];
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="AvatarLeft">
+        <div className="Avatar">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        </div>
+        <div>
+        {contacts.map((item,index) => (
+          <div key={index}>
+            <p>{item}</p>
+          </div>
+        ))}
+        </div>
+      </div>
     </div>
   );
 }
