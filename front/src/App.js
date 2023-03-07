@@ -13,7 +13,6 @@ function App() {
     <div className="App">
      <AvatarList/>
      <MiniMonthNavigator onChange={handleDateChange} />
-      <div>{selectedDate.toLocaleString()}</div>
     </div>
   );
 }
