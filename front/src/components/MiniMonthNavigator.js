@@ -13,6 +13,7 @@ function MiniMonthNavigator({ onChange }) {
 
   // useState for selectedMonth. The selected month will be stored here. 
   const [selectedMonth, setSelectedMonth] = useState(new Date().getMonth());
+  const [selectedYear, setSelectedYear] = useState(new Date().getYear());
 
   // onClick={() => handleClick(i)}> - Here, handleClick is a function that is taking in month as an argument. 
   // Line 20: setSelected month is updating the state of selectedMonth to the argument passed (month)
