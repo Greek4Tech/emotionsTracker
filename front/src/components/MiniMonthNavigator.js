@@ -24,6 +24,7 @@ function MiniMonthNavigator({ onChange }) {
       onChange(new Date(new Date().getFullYear(), month));
     }
   };
+  // testing
 
   // function that executes when `{'<'} button` is clicked
   const handlePrevMonth = () => {
